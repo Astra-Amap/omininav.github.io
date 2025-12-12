@@ -6911,8 +6911,31 @@
     <div class="abstract-container">
         <h2 class="abstract-title">Abstract</h2>
         <p class="abstract-text">
-            Embodied navigation presents a core challenge for intelligent robots, requiring the comprehension of visual environments, natural language instructions, and autonomous exploration. Existing models often fall short in offering a unified solution across diverse navigation paradigms, resulting in low success rates and limited generalization. We introduce OmniNav, a unified framework addressing instruct-goal, object-goal, point-goal navigation, and frontier-based exploration within a single architecture. Our approach features a lightweight, low-latency policy that accurately predicts continuous-space waypoints (coordinates and orientations). This policy surpasses action-chunk methods in precision and supports real-world deployment at control frequencies up to 5 Hz. Architecturally, OmniNav employs a fast-slow system design: a fast module generates waypoints using short-horizon visual context and subtasks, while a slow module performs deliberative planning with long-horizon observations and candidate frontiers to select subsequent subgoals and subtasks. This collaboration enhances path efficiency and maintains trajectory coherence, particularly in exploration and memory-intensive scenarios. Crucially, we identify that the primary bottleneck isn't merely navigation policy learning, but a robust understanding of general instructions and objects. To boost generalization, OmniNav integrates large-scale, general-purpose training datasets, including those for image captioning and visual recognition, into a joint multi-task regimen. This significantly improves success rates and robustness. Extensive experiments confirm OmniNav's state-of-the-art performance across various navigation benchmarks, with real-world deployment further validating its efficacy. OmniNav provides practical insights for embodied navigation, charting a scalable path towards versatile, highly generalizable robotic intelligence.
-        </p>
+           Embodied navigation is a foundational challenge for intelligent robots, demanding
+the ability to comprehend visual environments, follow natural language instruc-
+tions, and explore autonomously. However, existing models struggle to provide
+a unified solution across heterogeneous navigation paradigms, often yielding low
+success rates and limited generalization. We present OmniNav, a unified frame-
+work that handles instruct-goal, object-goal, point-goal navigation, and frontier-
+based exploration within a single architecture. First, we introduce a lightweight,
+low-latency policy that predicts continuous-space waypoints (coordinates and ori-
+entations) with high accuracy, outperforming action-chunk methods in precision
+and supporting real-world deployment with control frequencies up to 5 Hz. Sec-
+ond, at the architectural level, OmniNav proposes a fast-slow system design: a
+fast module performs waypoint generation from relatively short-horizon visual
+context and subtasks, while a slow module conducts deliberative planning us-
+ing long-horizon observations and candidate frontiers to select the next subgoal
+and subtask. This collaboration improves path efficiency and maintains trajec-
+tory coherence in exploration and memory-intensive settings. Notably, we find
+that the primary bottleneck lies not in navigation policy learning per se, but in
+robust understanding of general instructions and objects. To enhance generaliza-
+tion, we incorporate large-scale general-purpose training datasets including those
+used for image captioning and referring/grounding into a joint multi-task regimen,
+which substantially boosts success rates and robustness. Extensive experiments
+demonstrate state-of-the-art performance across diverse navigation benchmarks,
+and real-world deployment further validates the approach. OmniNav offers practi-
+cal insights for embodied navigation and points to a scalable path toward versatile,
+highly generalizable robotic intelligence.        </p>
     </div>
 </div>
 
